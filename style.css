@@ -195,7 +195,7 @@ body::before {
 .weatherinfo,
 .section-message {
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateY(100px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .weatherinfo.show,
