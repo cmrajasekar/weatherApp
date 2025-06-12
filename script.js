@@ -159,7 +159,7 @@ async function updateForecastsInfo(city) {
           </div>`;
 
     forecastItemsContainer.insertAdjacentHTML("beforeend", forcastItem);
-    console.log(weatherData);
+    // console.log(weatherData);
   }
 }
 function showDisplaySection(sectionToShow) {
