@@ -108,10 +108,6 @@ async function updateWeatherInfo(city) {
 
   await updateForecastsInfo(city);
   showDisplaySection(weatherInfoSection);
-
-  setTimeout(() => {
-    weatherInfoSection.classList.add("show");
-  }, 1000);
 }
 
 async function updateForecastsInfo(city) {
