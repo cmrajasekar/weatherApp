@@ -74,15 +74,9 @@ function getCurrentDate() {
 }
 
 async function updateWeatherInfo(city) {
-  cityInput.disabled = true;
-  searchBtn.disabled = true;
-
   weatherInfoSection.classList.remove("show");
 
   const weatherData = await getFetchData("weather", city);
-
-  cityInput.disabled = false;
-  searchBtn.disabled = false;
 
   if (weatherData.cod != 200) {
     showDisplaySection(notFoundSection);
